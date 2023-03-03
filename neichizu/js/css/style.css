@@ -1,0 +1,284 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+.wf-roundedmplus1c {
+  font-family: "M PLUS Rounded 1c";
+}
+
+/* 要素名 */
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "M PLUS Rounded 1c";
+  margin: 0;
+  padding: 0;
+  background-color: #fcfcfc;
+  height: 100%;
+  width: 100%;
+  letter-spacing: 0.2em;
+  background-image: url(../img/pastel.jpeg);
+  padding-top: 8vh;
+}
+
+header {
+  display: flex;
+  padding: 10px 4% 5px;
+  position: fixed;
+  height: 8vh;
+  top: 0;
+  width: 100%;
+  background-color: rgb(179, 179, 179);
+  align-items: center;
+  z-index: 999;
+}
+
+h1 {
+  font-family: "M PLUS Rounded 1c";
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  text-shadow: 0 0 0.05em rgba(7, 85, 255, 0.6784313725), 0 0 0.1em rgba(7, 85, 255, 0.6784313725), 0 0 0.15em rgba(7, 85, 255, 0.6784313725), 0 0 0.3em rgba(7, 85, 255, 0.6784313725);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9921568627);
+}
+
+nav {
+  margin: 0 0 0 auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 0 0 15px;
+  font-size: 14px;
+}
+
+h2 {
+  font-family: "M PLUS Rounded 1c";
+  padding: 0;
+  margin: 0;
+  text-shadow: 0 0 0.05em rgba(0, 134, 40, 0.6784313725), 0 0 0.1em rgba(0, 134, 40, 0.6784313725), 0 0 0.15em rgba(0, 134, 40, 0.6784313725), 0 0 0.3em rgba(0, 134, 40, 0.6784313725);
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 25px;
+  font-weight: normal;
+  color: rgba(255, 149, 250, 0.301);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.082);
+}
+
+img {
+  vertical-align: bottom;
+  border-radius: 10px;
+}
+
+p {
+  font-family: "M PLUS Rounded 1c";
+  text-align: left;
+}
+
+/* Class */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("DSC00697.JPG") top center/cover no-repeat;
+}
+
+.sp-nav {
+  display: none;
+}
+
+.map_title {
+  height: 5vh;
+  background-color: rgb(142, 196, 158);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map_wrap {
+  position: relative;
+}
+
+.mapflame {
+  position: absolute;
+  display: block;
+  border: solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 0px;
+  border-top: none;
+  background-color: #ffffff;
+  margin: 0 auto;
+  height: 80vh;
+  width: 100%;
+}
+
+.foot_nav {
+  position: fixed;
+  height: 7vh;
+  background-color: #ffffff;
+  top: auto;
+  bottom: 0;
+  width: 100%;
+}
+
+/* id */
+#footer02 {
+  background: #E0FFFF;
+}
+
+.ie #footer02 .logo img,
+#footer02 .logo {
+  display: inline-block;
+  width: 120px;
+}
+
+#footer02 .nav li a {
+  padding: 15px;
+  color: #ccc;
+}
+
+#footer02 .c-btn {
+  margin-left: 25px;
+}
+
+/*responsive*/
+@media screen and (max-width: 680px) {
+  .pc-nav {
+    display: none;
+  }
+  .sp-nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.2s ease-in-out;
+  }
+  #hamburger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 25px;
+    margin: 0 0 0 auto;
+  }
+  #hamburger span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: translateY(-50%);
+  }
+  #hamburger::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+  #hamburger::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 2px;
+    background-color: #fff;
+  }
+  /*スマホメニュー*/
+  .sp-nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .sp-nav li {
+    margin: 0;
+    padding: 0;
+  }
+  .sp-nav li span {
+    font-size: 15px;
+    color: #fff;
+  }
+  .sp-nav li a, .sp-nav li span {
+    display: block;
+    padding: 20px 0;
+  }
+  /*-閉じるアイコンー*/
+  .sp-nav .close {
+    position: relative;
+    padding-left: 20px;
+  }
+  .sp-nav .close::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(45deg);
+  }
+  .sp-nav .close::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(-45deg);
+  }
+  .toggle {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .main-visual {
+    padding: 0 4%;
+  }
+  h2 {
+    font-size: 22px;
+    margin: 0;
+    line-height: 1;
+    color: #fcfcfc;
+    text-align: center;
+    stroke: 0.05vw rgba(0, 0, 0, 0.795);
+  }
+  p {
+    font-family: "M PLUS Rounded 1c";
+    text-align: left;
+  }
+}/*# sourceMappingURL=style.css.map */

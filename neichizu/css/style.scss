@@ -1,0 +1,414 @@
+@charset "utf-8";
+* {
+   box-sizing: border-box;
+}
+
+
+.wf-roundedmplus1c { font-family: "M PLUS Rounded 1c","ヒラギノ角ゴ Pro W3" }
+/* 要素名 */
+html{
+   height: 100%;
+}
+body { 
+   background-image: url(../img/pastel.jpeg);
+   font-family: "M PLUS Rounded 1c";
+   margin: 0;
+   padding: 0;
+   background-color: #fcfcfc;
+   height: 100%;
+   width: 100%;
+   letter-spacing : 0.2em;
+   
+   padding-top: 8vh;
+}
+header {
+   display: flex;
+   padding: 10px 4% 5px;
+   position: fixed;
+   height: 8vh;
+   top: 0;
+   width: 100%;
+   background-color: rgb(179, 179, 179);
+   align-items: center;  
+   z-index: 999;
+}
+.h1-title_text {
+   font-family: "M PLUS Rounded 1c";
+   margin: 0; padding: 0;
+   font-size:20px;
+   text-shadow: 
+		0 0 0.05em #0755ffad,
+		0 0 0.10em #0755ffad,
+      0 0 0.15em #0755ffad,
+		0 0 0.30em #0755ffad;   
+}
+a {	
+   text-decoration: none;
+   color: #fffffffd;
+}
+p{
+   margin: 0px;
+}
+nav {
+   margin: 0 0 0 auto;
+}
+ul {
+   list-style: none;
+   margin: 0;
+   display: flex;
+}
+li {
+   margin: 0 0 0 15px;
+   font-size: 14px;
+}
+.h2-title_text {
+   font-family: "M PLUS Rounded 1c";
+   padding: 0;
+    margin: 0;
+    text-shadow: 
+    0 0 0.05em #008628ad,
+    0 0 0.10em #008628ad,
+  0 0 0.15em #008628ad,
+    0 0 0.30em #008628ad;  
+   margin-left:10%;
+   margin-right: 10%;
+   font-size: 25px;
+   font-weight: normal;
+   color: #fff;
+   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.082);
+}
+
+img{
+   vertical-align:bottom;
+   border-radius: 0px;
+   
+}
+p{
+   font-family: "M PLUS Rounded 1c";
+   text-align:left;
+}
+/* Class */
+.wrapper{
+   background-image: url(../img/pastel.jpeg);
+   display: flex;
+   flex-direction: column;
+}
+.main-visual {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background: url('DSC00697.JPG') top center / cover no-repeat;   
+}
+.sp-nav {
+   display: none;
+}
+.map_title {
+    height: 5vh;
+    background-color: rgb(142, 196, 158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .map_title_img{
+      transform:translateY(-10%);
+    }
+}
+.map_wrap{
+   position: relative;
+}
+.mapflame{
+   position: absolute;
+   display: block;
+   border:solid;border-color:rgb(255, 255, 255);
+   border-width:0px;
+   border-top: none;
+   background-color:#ffffff;
+   // border-radius: 5px;
+   margin: 0 auto;
+   height: 80vh;
+   width: 100%;
+}
+// content
+.content{
+   margin: 5%;
+.white_back{
+   background-color: #E0FFFF;
+   border: #2b2e2c;
+   width: 100%;
+   height: auto;
+   padding: 5% 10%;
+   p{
+      text-align: left;
+      margin-bottom: 0px;
+   }
+   .white_back_inner{
+      display: flex;
+      justify-content: center;
+      .white_back_inner_eyecatch{
+         margin: 5%;
+         .white_inner_map-title{
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+         }
+         img{
+            height:auto;width: 30vw;
+         }
+         .white_back_inner_info{
+            padding: 0% 5% 0% 5%;
+         }
+      }
+      
+   }
+
+  
+}
+.link_url{
+   color: rgb(60, 60, 183);
+   display: block;
+   text-align: center;
+}
+.space{
+   height: 50px;
+}
+}
+//end content
+.foot_nav{
+    .foot_nav_p{
+      font-family: "M PLUS Rounded 1c";
+      text-align: center;
+    }
+    .foot_nav_link{
+      font-family: "M PLUS Rounded 1c";
+      color: rgb(69, 150, 226);
+      font-weight: bold;
+      text-shadow: 0 0 0.05em #E0FFFF;
+    }
+    position: fixed;
+    height: 7vh;
+    background-color: #ffffff;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+}
+/* id */
+#footer02 {
+background: #E0FFFF;
+}
+.ie #footer02 .logo img,
+#footer02 .logo {
+display: inline-block;
+width: 120px;
+}
+
+#footer02 .nav li a {
+padding: 15px;
+color: #ccc;
+}
+
+#footer02 .c-btn {
+margin-left: 25px;
+}
+
+
+//map-css
+.m-name_text{
+   font-size: 30px;
+}
+
+
+
+
+/*responsive*/
+@media screen and (max-width: 680px) {
+.pc-nav {
+   display: none;
+}
+.sp-nav {
+   z-index: 1;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   display: block;
+   width: 100%;
+   background: rgba(0, 0, 0, .8);
+   opacity: 0;
+   transform: translateY(-100%);
+   transition: all .2s ease-in-out;
+}
+#hamburger {
+   position: relative;
+   display: block;
+   width: 30px;
+   height: 25px;
+   margin: 0 0 0 auto;
+}
+#hamburger span {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   display: block;
+   width: 100%;
+   height: 2px;
+   background-color: #fff;
+   transform: translateY(-50%);
+}
+#hamburger::before {
+   content: '';
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   background-color: #fff;
+}
+#hamburger::after {
+   content: '';
+   display: block;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 70%;
+   height: 2px;
+   background-color: #fff;
+}
+/*スマホメニュー*/
+.sp-nav ul {
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+.sp-nav li {
+   margin: 0;
+   padding: 0;
+}
+.sp-nav li span {
+   font-size: 15px;
+   color: #fff;
+}
+.sp-nav li a, .sp-nav li span {
+   display: block;
+   padding: 20px 0;
+}
+/*-閉じるアイコンー*/
+.sp-nav .close {
+   position: relative;
+   padding-left: 20px;
+}
+.sp-nav .close::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 0;
+   display: block;
+   width: 16px;
+   height: 1px;
+   background: #fff;
+   transform: rotate( 45deg );
+}
+.sp-nav .close::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 0;
+   display: block;
+   width: 16px;
+   height: 1px;
+   background: #fff;
+   transform: rotate( -45deg );
+}
+.toggle {
+   transform: translateY( 0 );
+   opacity: 1;
+}
+.main-visual {
+   padding: 0 4%;
+}
+.h2-title_text {
+   font-family: "M PLUS Rounded 1c";
+   padding: 0;
+    margin: 0;
+    text-shadow: 
+    0 0 0.05em #008628ad,
+    0 0 0.10em #008628ad,
+  0 0 0.15em #008628ad,
+    0 0 0.30em #008628ad;  
+   margin-left:10%;
+   margin-right: 10%;
+   font-size: 20px;
+   font-weight: normal;
+   color: #fff;
+   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.082);
+}
+
+.map_title {
+   height: 5vh;
+   background-color: rgb(142, 196, 158);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   .map_title_img{
+     height: 1.1em;
+     width: 1.1em;
+   }
+}
+
+.content{
+   .white_back{
+      .white_back_inner{
+         display: flex;
+         flex-direction: column;
+         .white_back_inner_eyecatch{
+            margin: 2%;
+            margin-bottom: 5%;
+            img{
+               width: 100%;
+            }
+         }
+      }
+     
+}
+}
+
+.foot_nav{
+    .foot_nav_p{
+      font-family: "M PLUS Rounded 1c";
+      text-align: center;
+    }
+    .foot_nav_p{
+      text-align: center; 
+      display: block; 
+      margin:1em;
+    }
+    .foot_nav_link{
+      font-family: "M PLUS Rounded 1c";
+      color: rgb(69, 150, 226);
+      font-weight: bold;
+      text-shadow: 0 0 0.05em #E0FFFF;
+    }
+    position: fixed;
+    height: 7vh;
+    background-color: #ffffff;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+}
+
+//map-css
+.m-name_text{
+   color: rgb(39, 39, 39);
+   font-size: 20px;
+   font-weight: bold;
+}
+
+
+
+
+// end
+}
+   
