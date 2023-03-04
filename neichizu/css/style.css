@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-image: url(../img/pastel.jpeg);
+  background-image: url(../img/nature_back.webp);
   font-family: "M PLUS Rounded 1c";
   margin: 0;
   padding: 0;
@@ -93,7 +93,7 @@ p {
 
 /* Class */
 .wrapper {
-  background-image: url(../img/pastel.jpeg);
+  background-image: url(../img/nature_back.png);
   display: flex;
   flex-direction: column;
 }
@@ -142,7 +142,7 @@ p {
   margin: 5%;
 }
 .content .white_back {
-  background-color: #E0FFFF;
+  background-color: #ffffe0;
   border: #2b2e2c;
   width: 100%;
   height: auto;
@@ -160,6 +160,7 @@ p {
   margin: 5%;
 }
 .content .white_back .white_back_inner .white_back_inner_eyecatch .white_inner_map-title {
+  white-space: nowrap;
   font-size: 1.5rem;
   margin-bottom: 5px;
 }
@@ -173,6 +174,7 @@ p {
 .content .link_url {
   color: rgb(60, 60, 183);
   display: block;
+  white-space: nowrap;
   text-align: center;
 }
 .content .space {
@@ -180,6 +182,10 @@ p {
 }
 
 .foot_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
   position: fixed;
   height: 7vh;
   background-color: #ffffff;
@@ -189,7 +195,6 @@ p {
 }
 .foot_nav .foot_nav_p {
   font-family: "M PLUS Rounded 1c";
-  text-align: center;
 }
 .foot_nav .foot_nav_link {
   font-family: "M PLUS Rounded 1c";
