@@ -39,16 +39,16 @@ hum.on('click', function(){
 <h1 class="h1-title_text"><img src="./img/mountain.png" width="30px" height="30px" ;><a href="index.php">ねいちず-NatureMaps-</a></h1>
 <nav class="pc-nav"><ul>
 <li><a href="index.php">TOP</a></li>
-<!-- <li><a href="map-info.php">MAP</a></li>
-<li><a href="Jihanki-info.html">INFO</a></li>
+<li><a href="other_list.php">OTHERS</a></li>
+<!-- <li><a href="Jihanki-info.html">INFO</a></li>
 <li><a href="myprof.html">PROFILE</a></li> -->
 </ul>
 </nav>
 <nav class="sp-nav">
 <ul>
 <li><a href="index.php">TOP</a></li>
-<!-- <li><a href="map-info.php">MAP</a></li>
-<li><a href="Jihanki-info.html">INFO</a></li>
+<li><a href="other_list.php">OTHERS</a></li>
+<!-- <li><a href="Jihanki-info.html">INFO</a></li>
 <li><a href="myprof.html">PROFILE</a></li> -->
 <li class="close"><span>閉じる</span></li>
 </ul>
